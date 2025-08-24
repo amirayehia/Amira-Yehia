@@ -17,7 +17,8 @@
   >
     {% content_for 'blocks' %}
     
-<img src="https://cdn.shopify.com/s/files/1/0000/1111/files/banner.jpg?v=16934567" alt="Banner" width="full" height = "full">
+<img src="{{ section.settings.banner_image | img_url: 'master' }}" alt="Banner" width="full" height="full">
+  <h1>{{ section.settings.banner_heading }}</h1>
 
 
   </div>
