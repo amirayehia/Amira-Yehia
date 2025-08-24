@@ -1,0 +1,23 @@
+{% schema %}
+{
+  "name": "Custom Banner",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "banner_image",
+      "label": "Banner Image"
+    },
+    {
+      "type": "text",
+      "id": "banner_heading",
+      "label": "Heading",
+      "default": "Welcome to our shop"
+    }
+  ]
+}
+{% endschema %}
+
+<section class="custom-banner">
+  {% comment %} <img src="{{ section.settings.banner_image | img_url: 'master' }}" alt="Banner"> {% endcomment %}
+  <h1>{{ section.settings.banner_heading }}</h1>
+</section>
