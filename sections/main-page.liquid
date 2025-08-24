@@ -2,7 +2,7 @@
   <img src="{{ 'Frame.png' | asset_url }}" alt="Banner" height="full" width="full">
 <div id = 'sec_container'>
 <div>
-<div>
+  <div>
     <h2>The Gift Guide</h2>
     <p>
     Discover Joy: Your Ultimate Holiday Gift Destination. Explore our curated selection and find the perfect gifts to delight your loved ones this holiday season.
@@ -10,15 +10,12 @@
     <button> 
     Shop Now
    </button>
-</div> 
-  <div> 
+  </div> 
+  <div class="img_container"> 
     <img src="{{ 'Frame (1).png' | asset_url }}" alt="Banner2" height="full" width="full">
   </div>
+</div>  
 </div>
-
-
-    
-  </div>
 </div>
 
 
@@ -26,6 +23,16 @@
 
 {% stylesheet %}
  
+#sec_container{
+  display: flex;
+
+}
+.img_container{
+  width: 50%;
+}
+.img_container img{
+  width: 100%;
+}
 
   @media (prefers-reduced-motion: no-preference) {
     marquee-component:not([data-disabled]) .marquee__wrapper {
