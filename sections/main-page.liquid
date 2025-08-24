@@ -7,8 +7,11 @@
     Discover Joy: Your Ultimate Holiday Gift Destination. Explore our curated selection and find the perfect gifts to delight your loved ones this holiday season.
     </p>
     <button> 
+      <div class="layer">
+
+      </div>
    SHOP NOW    
- <svg width="30" height="20" viewBox="0 0 64 27" xmlns="http://www.w3.org/2000/svg">
+   <svg width="30" height="20" viewBox="0 0 64 27" xmlns="http://www.w3.org/2000/svg">
       <path d="M1.80273 11.8199L0.0372066 11.8199L0.0372062 15.351L1.80273 15.351L1.80273 13.5854L1.80273 11.8199ZM63.0962 14.8339C63.7856 14.1444 63.7856 13.0265 63.0962 12.337L51.8604 1.10128C51.1709 0.411803 50.0531 0.411803 49.3636 1.10128C48.6741 1.79077 48.6741 2.90864 49.3636 3.59812L59.3509 13.5855L49.3636 23.5728C48.6741 24.2623 48.6741 25.3801 49.3636 26.0696C50.0531 26.7591 51.1709 26.7591 51.8604 26.0696L63.0962 14.8339ZM1.80273 13.5854L1.80273 15.351L61.8477 15.351L61.8477 13.5855L61.8477 11.8199L1.80273 11.8199L1.80273 13.5854Z"/>
     </svg>
    
@@ -59,6 +62,7 @@
   border: none;
   padding: 15px 35px;
   transition: all 1s;
+  position: relative;
 }
 .txt_container button:hover{
  background-color: #FFF544;
@@ -68,6 +72,9 @@
 .txt_container button:hover svg{
  fill: black !important
 ; 
+}
+.txt_container button .layer{
+  position: absolute;
 }
 
 
