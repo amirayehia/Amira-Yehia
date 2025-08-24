@@ -1,8 +1,8 @@
 <div id="banner_container">
   <img src="{{ 'Frame.png' | asset_url }}" alt="Banner" height="full" width="full">
-  <div id = 'sec_container'>
+<div id = 'sec_container'>
 <div>
-  <div>
+<div>
     <h2>The Gift Guide</h2>
     <p>
     Discover Joy: Your Ultimate Holiday Gift Destination. Explore our curated selection and find the perfect gifts to delight your loved ones this holiday season.
@@ -10,10 +10,9 @@
     <button> 
     Shop Now
    </button>
-  </div>
-    <img src="{{ 'Frame (1).png' | asset_url }}" alt="Banner2" height="full" width="full">
-
+</div> 
   <div> 
+    <img src="{{ 'Frame (1).png' | asset_url }}" alt="Banner2" height="full" width="full">
   </div>
 </div>
 
@@ -26,44 +25,7 @@
 
 
 {% stylesheet %}
-  marquee-component {
-    display: block;
-    width: 100%;
-    overflow: hidden;
-  }
-
-  .marquee__wrapper {
-    display: flex;
-    gap: var(--marquee-gap);
-    width: fit-content;
-    white-space: nowrap;
-  }
-
-  .marquee__content {
-    min-width: max-content;
-    display: flex;
-    gap: var(--marquee-gap);
-  }
-
-  .marquee__content :is(p, h1, h2, h3, h4, h5, h6) {
-    white-space: nowrap;
-  }
-
-  .marquee__content .marquee__repeated-items * {
-    max-width: none;
-  }
-
-  .marquee__repeated-items {
-    min-width: max-content;
-    display: flex;
-    gap: var(--marquee-gap);
-    align-items: center;
-    justify-content: center;
-  }
-
-  .marquee__repeated-items > * {
-    align-content: center;
-  }
+ 
 
   @media (prefers-reduced-motion: no-preference) {
     marquee-component:not([data-disabled]) .marquee__wrapper {
@@ -77,6 +39,10 @@
     }
   }
 {% endstylesheet %}
+
+
+
+
 {% schema %}
 {
   "name": "t:names.page",
